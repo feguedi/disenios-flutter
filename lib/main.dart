@@ -1,5 +1,6 @@
-import 'package:disenios/src/views/basic_design.dart';
 import 'package:flutter/material.dart';
+
+import 'package:disenios/src/views/views.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,9 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: 'basic',
+      initialRoute: 'scroll',
       routes: {
         'basic': (_) => BasicDesignView(),
+        'scroll': (_) => ScrollDesign(),
       },
     );
   }
