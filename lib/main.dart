@@ -1,3 +1,4 @@
+import 'package:disenios/src/views/basic_design.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,9 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Center(
-        child: Text('Hola mundo'),
-      ),
+      initialRoute: 'basic',
+      routes: {
+        'basic': (_) => BasicDesignView(),
+      },
     );
   }
 }
